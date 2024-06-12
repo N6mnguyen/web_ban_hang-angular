@@ -1,0 +1,119 @@
+<form
+  action=""
+  [formGroup]="productForm"
+  class=" mx-auto border border-3 w-[570px] h-620px] px-4 py-6"
+  (ngSubmit)="onSubmit()"
+>
+  <h1 class="my-12 font-bold text-3xl text-center">Thêm mới sản phẩm</h1>
+  <div class="mb-5">
+    <label
+      for="name"
+      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+      >Tên sản phẩm:</label
+    >
+    <input
+      type="text"
+      id="name"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      placeholder="Tên sản phẩm..."
+      formControlName="name"
+      required
+    />
+    <p
+      class="mt-2 text-sm text-red-600 dark:text-red-500"
+      *ngIf="
+        !productForm.controls.name.valid &&
+        (productForm.controls.name.dirty || productForm.controls.name.touched)
+      "
+    >
+      <span class="font-medium">Lỗi!</span> Xin mời nhập tên sản phẩm và không
+      được dưới 6 kí tự !
+    </p>
+  </div>
+  <div class="mb-5">
+    <label
+      for="image"
+      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+      >Ảnh sản phẩm</label
+    >
+    <input
+      type="text"
+      id="image"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      placeholder="Ảnh sản phẩm..."
+      formControlName="image"
+      required
+    />
+    <p
+      class="mt-2 text-sm text-red-600 dark:text-red-500"
+      *ngIf="
+        !productForm.controls.image.valid &&
+        (productForm.controls.image.dirty || productForm.controls.image.touched)
+      "
+    >
+      <span class="font-medium">Lỗi!</span> Vui lòng điền ảnh !
+    </p>
+  </div>
+  <div class="mb-5">
+    <label
+      for="price"
+      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+      >Giá sản phẩm</label
+    >
+    <input
+      type="number"
+      id="price"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      placeholder="Giá sản phẩm..."
+      formControlName="price"
+      required
+    />
+  </div>
+  <p
+    class="mt-2 text-sm text-red-600 dark:text-red-500"
+    *ngIf="
+      !productForm.controls.price.valid &&
+      (productForm.controls.price.dirty || productForm.controls.price.touched)
+    "
+  >
+    <span class="font-medium">Lỗi!</span> Vui lòng điền giá !
+  </p>
+  <div class="mb-5">
+    <label
+      for="countries"
+      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+      >Chọn danh mục</label
+    >
+    <select
+      id=""
+      formControlName="categoryId"
+      name="categoryId"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+    >
+      @for (item of categories; track $index) {
+      <option value="{{ item.id }}">{{ item.name }}</option>
+      }
+    </select>
+  </div>
+  <div class="mb-5">
+    <label
+      for="description"
+      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+      >Mô tả chi tiết</label
+    >
+    <textarea
+      id="description"
+      rows="4"
+      formControlName="description"
+      class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      placeholder="Mô tả sản phẩm..."
+    ></textarea>
+  </div>
+  <button
+    type="submit"
+    class="bg-red-200 hover:bg-blue-200 text-white rounded-md p-3 block w-full"
+    [disabled]="!productForm.valid"
+  >
+    Thêm sản phẩm
+  </button>
+</form>

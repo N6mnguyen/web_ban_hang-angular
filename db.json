@@ -1,0 +1,128 @@
+{
+  "products": [
+    {
+      "name": "Chuột Razer Basilisk V3",
+      "categoryId": "1",
+      "image": "https://product.hstatic.net/200000722513/product/rtehosjd_7cf8331e76c04cb59e02a8f763ae3bb8_grande.png",
+      "price": 1060000,
+      "description": "Chuột Razer Basilisk V3",
+      "id": 1
+    },
+    {
+      "name": "Chuột Razer DeathAdder Essential (RZ01-03850100-R3M1)",
+      "categoryId": "1",
+      "image": "https://product.hstatic.net/200000722513/product/thumbchuot_7445abea69bf461e881eeba2b6cbbd8d_grande.jpg",
+      "price": 460000,
+      "description": "Chuột Razer DeathAdder Essential (RZ01-03850100-R3M1)",
+      "id": 2
+    },
+    {
+      "name": "Chuột Razer DeathAdder Essential (RZ01-03850100-R3M1)",
+      "categoryId": "1",
+      "image": "https://product.hstatic.net/200000722513/product/thumbchuot_7445abea69bf461e881eeba2b6cbbd8d_grande.jpg",
+      "price": 460000,
+      "description": "Chuột Razer DeathAdder Essential (RZ01-03850100-R3M1)",
+      "id": 3
+    },
+    {
+      "name": "Lót chuột Corsair MM700 RGB Extended",
+      "categoryId": "2",
+      "image": "https://product.hstatic.net/200000722513/product/mm700-rgb-config-gallery-mm700-rgb-01_91e250e7026f40c593c20a9213c12cf0_1eda172419b34c0985a778aeaf9206f2_grande.png",
+      "price": 1060000,
+      "description": "Chuột Razer Basilisk V3",
+      "id": 5
+    },
+    {
+      "name": "Lót chuột Corsair MM700 RGB Extended",
+      "categoryId": "2",
+      "image": "https://product.hstatic.net/200000722513/product/mm700-rgb-config-gallery-mm700-rgb-01_91e250e7026f40c593c20a9213c12cf0_1eda172419b34c0985a778aeaf9206f2_grande.png",
+      "price": 460000,
+      "description": "Lót chuột Corsair MM700 RGB Extended",
+      "id": 6
+    },
+    {
+      "name": "Lót chuột COUGAR ARENA BLACK XL - GAMING MOUSE PAD",
+      "categoryId": "2",
+      "image": "https://product.hstatic.net/200000722513/product/gearvn_cougargamingarena_black_1_56df2bc4132c4b768e216b8ac9326e57_08f685586e5547d3a67a5bf33eeb3776_grande.jpg",
+      "price": 460000,
+      "description": "Lót chuột COUGAR ARENA BLACK XL - GAMING MOUSE PAD",
+      "id": 7
+    },
+    {
+      "name": "Lót chuột Razer Gigantus v2 - Large",
+      "categoryId": "2",
+      "image": "https://product.hstatic.net/200000722513/product/lot-chuot-razer-gigantus-v2-large-666_2feb401d03c7477687570a956024dc2a_6eca58a00f414e8ea64df20755f71a2e_grande.jpg",
+      "price": 460000,
+      "description": "Lót chuột Razer Gigantus v2 - Large",
+      "id": 8
+    },
+    {
+      "name": "Bàn phím Không dây EK87 Pro RGB Đen Dream Switch",
+      "categoryId": "3",
+      "image": "https://product.hstatic.net/200000722513/product/ek87_pro_-_black_golden_-_01_d8d3081ef73f4757ae8c3820e5fa92a4_grande.png",
+      "price": 1060000,
+      "description": "Chuột Razer Basilisk V3",
+      "id": 9
+    },
+    {
+      "name": "Bàn phím Không dây EK87 Pro RGB Trắng Dream Switch",
+      "categoryId": "3",
+      "image": "https://product.hstatic.net/200000722513/product/ek87_pro_-_proto_-_01_e23c80ba07604b23970641fd65dfea61_grande.png",
+      "price": 460000,
+      "description": "Bàn phím Không dây EK87 Pro RGB Trắng Dream Switch",
+      "id": 10
+    },
+    {
+      "name": "Bàn phím Không dây EK87 Pro RGB Trắng Dream Switch",
+      "categoryId": "3",
+      "image": "https://product.hstatic.net/200000722513/product/ek87_pro_-_proto_-_01_e23c80ba07604b23970641fd65dfea61_grande.png",
+      "price": 460000,
+      "description": "Bàn phím Không dây EK87 Pro RGB Trắng Dream Switch",
+      "id": 11
+    },
+    {
+      "name": "Bàn phím Logitech G Pro X 60 Light Speed White",
+      "categoryId": "3",
+      "image": "https://product.hstatic.net/200000722513/product/3ecxppkh_e1fb53b585e24c689bb8a92ebef0efbf_grande.png",
+      "price": 460000,
+      "description": "Bàn phím Logitech G Pro X 60 Light Speed White",
+      "id": 12
+    }
+  ],
+  "categories": [
+    {
+      "name": "Chuột Chơi Game",
+      "id": 1
+    },
+    {
+      "name": "Lót Chuột",
+      "id": 2
+    },
+    {
+      "name": "Bàn Phím Gaming",
+      "id": 3
+    },
+    {
+      "name": "Tai Nghe Gaming",
+      "id": 4
+    },
+    {
+      "name": "Nam",
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$UjQD4QOTTnDqUGrhFYX43ulpDEl7J3V2oACILRzA5HJASWesZPWuq",
+      "name": "admin",
+      "id": 2
+    },
+    {
+      "email": "nam123456@gmail.com",
+      "password": "$2a$10$AOLzUAKCRcexFzPfFrmfKuYhUthv5zxnPhQ25zXxcfTDxMNVzAdaO",
+      "name": "Nguyen Van Nam",
+      "id": 3
+    }
+  ]
+}

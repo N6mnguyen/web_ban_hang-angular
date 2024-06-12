@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@layer components {
+  .custom-radio {
+    @apply w-5 h-5 border-2 rounded-full transition-all bg-[#D0EC48];
+  }
+  .custom-radio:checked {
+    @apply bg-[#D0EC48] border-[#D0EC48];
+  }
+  .custom-radio:focus {
+    @apply outline-none ring-2 ring-offset-2 ring-[#D0EC48]/50;
+  }
+  .custom-radio:checked:focus {
+    @apply ring-2 ring-offset-2 ring-[#D0EC48]/75;
+  }
+  .custom-radio1 {
+    @apply w-5 h-5 border-2 rounded-full transition-all bg-[#565656];
+  }
+  .custom-radio1:checked {
+    @apply bg-[#565656] border-[#565656];
+  }
+  .custom-radio1:focus {
+    @apply outline-none ring-2 ring-offset-2 ring-[#565656]/50;
+  }
+  .custom-radio1:checked:focus {
+    @apply ring-2 ring-offset-2 ring-[#565656]/75;
+  }
+}

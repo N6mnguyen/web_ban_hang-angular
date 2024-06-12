@@ -1,0 +1,99 @@
+<h1 class="text-[30px] mt-[30px] ml-[30px] font-bold">SIGNUP</h1>
+<div class="border border-4 w-[450px] mx-[580px] h-[650px]">
+<form
+  action=""
+  [formGroup]="signupForm"
+  class="max-w-sm mx-auto"
+  (ngSubmit)="onSubmit()"
+>
+  <h1 class="my-12 font-bold text-3xl text-center font-serif">Đăng ký</h1>
+
+  <div class="mb-5">
+    <label
+      for="name"
+      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white px-2 font-sans"
+      >Họ và tên</label
+    >
+    <input
+      type="text"
+      id="name"
+      class="border border-2 rounded-[15px] p-2 px-3 w-full"
+      placeholder="Họ tên..."
+      formControlName="name"
+      required
+    />
+    <p
+      class="mt-2 text-sm text-red-600 dark:text-red-500"
+      *ngIf="
+        !signupForm.controls.name.valid &&
+        (signupForm.controls.name.dirty || signupForm.controls.name.touched)
+      "
+    >
+      <span class="font-medium">Lỗi!</span> Xin mời nhập họ và tên !
+    </p>
+  </div>
+  <div class="mb-5">
+    <label
+      for="email"
+      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white px-2 font-sans"
+      >Email</label
+    >
+    <input
+      type="email"
+      id="email"
+      class="border border-2 rounded-[15px] p-2 px-3 w-full"
+      placeholder="Email..."
+      formControlName="email"
+      required
+    />
+    <p
+      class="mt-2 text-sm text-red-600 dark:text-red-500"
+      *ngIf="
+        !signupForm.controls.email.valid &&
+        (signupForm.controls.email.dirty || signupForm.controls.email.touched)
+      "
+    >
+      <span class="font-medium">Lỗi!</span> Xin mời nhập đúng email !
+    </p>
+  </div>
+  <div class="mb-5">
+    <label
+      for="password"
+      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white px-2 font-sans"
+      >Mật khẩu</label
+    >
+    <input
+      type="password"
+      id="password"
+      class="border border-2 rounded-[15px] p-2 px-3 w-full"
+      placeholder="Mật khẩu..."
+      formControlName="password"
+      required
+    />
+    <p
+      class="mt-2 text-sm text-red-600 dark:text-red-500"
+      *ngIf="
+        !signupForm.controls.password.valid &&
+        (signupForm.controls.password.dirty ||
+          signupForm.controls.password.touched)
+      "
+    >
+      <span class="font-medium">Lỗi!</span> Xin mời nhập mật khẩu và không dưới
+      8 ký tự !
+    </p>
+  </div>
+  <div class="w-auto px-16">  
+    <div class="inline-flex mx-auto text-sm font-semibold text-gray-700 my-2">
+      <p>Đã có tài khoản ? Đăng nhập</p>
+      <a href="sign-in" class="ml-1 underline text-blue-700 hover:text-blue-800">
+        tại đây</a>
+    </div>
+  </div>
+  <button
+    type="submit"
+    class="bg-gradient-to-r from-blue-400 to-blue-500 text-white p-2 rounded mt-4 disabled:opacity-50 font-bold flex flex-col mx-auto"
+    [disabled]="!signupForm.valid">
+    Đăng ký
+  </button>
+</form>
+</div>
